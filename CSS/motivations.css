@@ -1,0 +1,15 @@
+header {
+	background-color: #0072C6;
+	color: #fff;
+	text-align: center;
+	padding: 2em;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+}
