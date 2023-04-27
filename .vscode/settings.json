@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/aa2eb4c2-f45f-4a94-aa09-3beea1bbf6b9/resourceGroups/ProjetCloud-PROCUREUR-Thomas_group/providers/Microsoft.Web/sites/ProjetCloud-PROCUREUR-Thomas",
+    "appService.deploySubpath": "."
+}
