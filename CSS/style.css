@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat';
     margin: 0 0;
     background-color: rgb(241, 241, 241);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 nav {
@@ -43,7 +43,7 @@ nav a:hover {
     background-image: url('https://imgs.search.brave.com/8iar_INZu2kmvRgDwz5weXxGEpgqA6Nzr6WuDbxmT9M/rs:fit:1200:588:1/g:ce/aHR0cHM6Ly93d3cu/dGVrc3lzdXNhLmNv/bS9pbWFnZXMvZDEx/YzU1YmU0ZjcxYWVk/OWZmN2QwYmZlZWJi/ZGI4MmIuanBn');
 	background-size: cover;
     background-position: center;
-    height: 40vh;
+    height: 30vh;
     margin: 0 0;
     display: flex;
     align-items: center;
@@ -63,19 +63,26 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 40vh;
-    width: auto;
-    text-align: center;
+    min-height: 62vh;
+    width: calc(60vw - (100vw - 100%));
+    padding: 0 20vw;
+    text-align: justify;
     font-size: 20px;
-    height: 52vh;
     position: relative;
+}
+
+.presentation div {
+    padding: 10vh 0;
+}
+
+.presentation ul {
+    margin: 1% 1%;
 }
 
 .presentation:before,
 .presentation:after {
     content: "";
     position: absolute;
-    width: 100vh;
     height: 8vh;
     border-style: solid;
     z-index: -1;
@@ -83,14 +90,14 @@ nav a:hover {
 
 .presentation:before {
     left: 0;
-    bottom: 0;
-    border-color: transparent rgb(255, 201, 5) transparent transparent;
-    border-width: 20vh 20vh 0 20vh;
+    top: 0;
+    border-color: transparent transparent transparent rgb(255, 201, 5);
+    border-width: 0 0 20vh 10vw;
 }
 
 .presentation:after {
     right: 0;
-    top: 0;
-    border-color: transparent transparent transparent rgb(108, 108, 108);
-    border-width: 0 20vh 20vh 20vh;
+    bottom: 0;
+    border-color: transparent  rgb(108, 108, 108) transparent transparent;
+    border-width: 20vh 10vw 0 0;
 }

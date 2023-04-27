@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Déploiement</title>
-	<link rel="stylesheet" type="text/css" href="./../CSS/déploiement.css">
+	<link rel="stylesheet" type="text/css" href="./../CSS/style.css">
 </head>
 <body>
     <nav>
@@ -21,12 +21,51 @@
         </ul>
     </nav>
 
-	<header>
-		<h1>Microsoft Azure</h1>
-		<h2>Conception et déploiement d'une application web</h2>
-	</header>
-	
-	<main>
+	<div class="titre">
+        <h1>Déploiement de l'application Web
+        </h1>
+    </div>
+
+    <div class="presentation">
+        <div>
+            Afin de <b>déployer</b> ce site web, j'ai d'abord créé une <b>Web App</b>
+            dans le <b>portail Azure</b> et un <b><a href="https://github.com/Thomproc/CloudProject.git" style="color: #009af3;">dépôt</a> Git public </b> afin de stocker
+            le <b>code source</b> final.
+            <br>
+            Par la suite, j'ai <b>développé</b> localement le site jusqu'à ce que le rendu
+            visuel soit satisfaisant, puis j'ai <b>publié</b> l'entièreté du code dans le <b>dépôt Git</b> créé précédemment.
+            <br>
+            À ce stade du projet, il restait à établir le lien entre la <b>Web App</b> et les <b>fichiers sources</b>.
+
+            Pour cette dernière étape, je me suis rendu sur ma <b>Web App</b> dans le <b>portail Azure</b>, puis dans
+            l'onglet "<b>Centre de déploiement</b>" où il est possible de <b>déployer</b> le code source stocké dans
+            <b>GitHub</b> de deux manières :
+            <ul>
+                <li>
+                    <b>Automatiquement</b> en associant son compte GitHub à la Web App ("<b>GitHub</b>")
+                </li>
+                <li>
+                    <b>Manuellement</b> en fournissant l'URL du dépôt ("<b>GIT externe</b>")
+                </li>
+            </ul>
+
+            <br>
+			Afin de mener à bien ce projet, je me suis appuyé sur les ressources suivantes :
+            <ul>
+                <li>
+                    <a href="https://youtu.be/0QO2jdinCoQ"
+                    style="color: #009af3;">
+                    Tutoriel de Microsoft
+                    </a>
+                </li>
+                <li>
+                    <a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment#deploy-from-other-repositories"
+                    style="color: #009af3;">
+                        Déploiement d'un dépôt Git</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 		
 </body>
 </html>
